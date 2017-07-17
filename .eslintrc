@@ -1,3 +1,10 @@
 {
-  "extends": "eslint-config-egg"
+  "extends": "eslint-config-egg",
+  "rules" :  {
+    "no-console": "off",
+    "no-irregular-whitespace":"off",
+    "comma-dangle":"off",
+    "indent":"off",
+    "no-unused-vars":"warn"
+  }
 }

@@ -1,11 +1,17 @@
 {
-  "name": "app",
+  "name": "portal-attendance-approval-app",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "dependencies": {
+    "crypto": "^0.0.3",
     "egg": "^1.4.0",
-    "hasha": "^3.0.0"
+    "egg-development-proxyworker": "^1.1.0",
+    "hasha": "^3.0.0",
+    "jwt-simple": "^0.5.1",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
   },
   "devDependencies": {
     "autod": "^2.8.0",
@@ -14,7 +20,7 @@
     "egg-ci": "^1.6.0",
     "egg-mock": "^3.7.0",
     "eslint": "^3.19.0",
-    "eslint-config-egg": "^4.2.0",
+    "eslint-config-egg": "^5.0.0",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
@@ -23,6 +29,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
